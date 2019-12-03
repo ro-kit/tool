@@ -1,2 +1,3 @@
-# tool
-A tool docker image to generate code and documentation
+# ro-kit tool
+
+Docker image with code generation tools.
