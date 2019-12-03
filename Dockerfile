@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y php-cli && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl --silent -o /bin/json-cli -L https://github.com/swaggest/json-cli/releases/download/v1.6.5/json-cli && chmod +x /bin/json-cli && \
+RUN curl --silent -o /bin/json-cli -L https://github.com/swaggest/json-cli/releases/download/v1.6.6/json-cli && chmod +x /bin/json-cli && \
     json-cli --version && \
     curl --silent -o /bin/swac -L https://github.com/swaggest/swac/releases/download/v0.1.7/swac && chmod +x /bin/swac && \
     swac --version && \
