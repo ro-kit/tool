@@ -5,9 +5,9 @@ RUN curl -sL https://deb.nodesource.com/setup_13.x | bash - && \
     apt-get install -y php-cli nodejs && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl --silent -o /bin/json-cli -L https://github.com/swaggest/json-cli/releases/download/v1.7.6/json-cli && chmod +x /bin/json-cli && \
+RUN curl --silent -o /bin/json-cli -L https://github.com/swaggest/json-cli/releases/download/v1.7.8/json-cli && chmod +x /bin/json-cli && \
     json-cli --version && \
-    curl --silent -o /bin/swac -L https://github.com/swaggest/swac/releases/download/v0.1.12/swac && chmod +x /bin/swac && \
+    curl --silent -o /bin/swac -L https://github.com/swaggest/swac/releases/download/v0.1.13/swac && chmod +x /bin/swac && \
     swac --version && \
     curl --silent -o /bin/swagger -L https://github.com/go-swagger/go-swagger/releases/download/v0.23.0/swagger_linux_amd64 && chmod +x /bin/swagger && \
     swagger version
